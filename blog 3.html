@@ -29,6 +29,12 @@
 
             <h2>ASSIGNMENT3</h2>
             <p>In this assignment, I used the CSS class called "hidden" to make the modal box show and hide, and when users create posts, I check that all required fields are filled; to avoid security issues, I use safe DOM methods like document.createElement() to make new HTML elements, element.textContent to add text content, element.setAttribute() to set attribute values, and element.appendChild() to build the element structure. When getting filter conditions, I also set text from the input to lowercase for case-insensitive matching, and for the minimum and maximum price inputs, empty values get default handling. When users create a post with a new city, the system gets all existing city options from the dropdown menu, compares the new city with them without caring about uppercase or lowercase letters, and if the city is not already in the menu, it adds it.</p>
+
+            <h2>ASSIGNMENT4</h2>
+            <p>This project turned a simple webpage into a dynamic website. I used Node.js and Express to build the main brain (the server). Its job is to listen for when you visit a page.
+Instead of hard-coded HTML, we used EJS templates. These are like blueprints. The server takes the product data from a postData.json file and fills these blueprints to create the final HTML page for your browser. We made one main blueprint (index.ejs) that works for both the homepage (showing all products) and single product pages.
+I broke the page into reusable pieces (like the header, a product card, and the filter panel) using EJS partials. This keeps the code clean. The same product card template is used on the server to build the initial page and in the browser's JavaScript to add a new product without refreshing.
+Finally, the server is smart enough to send a friendly custom 404 error page if you try to visit a link that doesn't exist.</p>
         </article>
     </main>
 
